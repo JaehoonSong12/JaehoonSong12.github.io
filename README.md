@@ -4,7 +4,7 @@
 
 # CS4460 Vizualytics
 
-This project is a web-based information visualization project for Vizualytics team in CS4460: Intro Info Visualization by Georgia Institute of Technology. It is designed to explore and analyze data through engaging and interactive visual representations and is hosted using Flask/Github and developed with D3.js, HTML, CSS, and JavaScript. This project enables users to derive meaningful insights from datasets by visualizing trends, patterns, and relationships in an intuitive manner.
+This project is a web-based information visualization project for **Vizualytics** team in **CS4460: Intro Info Visualization** by Yalong Yang (yalong.yang@gatech.edu) *Georgia Institute of Technology*. It is designed to explore and analyze data through engaging and interactive visual representations and is hosted using Flask/Github and developed with D3.js, HTML, CSS, and JavaScript. This project enables users to derive meaningful insights from datasets by visualizing trends, patterns, and relationships in an intuitive manner.
 
 
 
