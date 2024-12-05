@@ -1,0 +1,59 @@
+/* Base styling for the body */
+body {
+    font-family: "Open Sans";
+}
+
+/* Main container styling */
+#main {
+    margin: 10px 20px;
+}
+
+/* Styling for axis labels */
+text.label {
+    text-anchor: middle;
+    font-size: 11px;
+    fill: #555;
+    font-family: sans-serif;
+}
+
+/* Styling for axis text (year and popularity score) */
+.axis text {
+    fill: #555;
+}
+
+/* Styling for the lines and paths of the axis */
+.axis line,
+.axis path {
+    stroke: #555;
+}
+
+/* Styling for the graph title */
+text.title {
+    text-anchor: middle;
+    font-size: 14px;
+    fill: #333;
+}
+
+
+
+/* ************************ Additional CSS rules for circle elements ************************ */
+circle {
+    fill: steelblue;
+    opacity: 0.7;
+}
+
+#main .title {
+    text-anchor: middle;
+    font-size: 16px;
+    fill: black;
+}
+
+.high-danceability {
+    fill: orange;
+    opacity: 0.45;
+}
+
+.low-danceability {
+    fill: steelblue;
+    opacity: 0.45;
+}

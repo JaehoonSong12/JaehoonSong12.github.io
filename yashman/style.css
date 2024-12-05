@@ -1,0 +1,113 @@
+/* Global Styling for the Page */
+body {
+    font-family: "Open Sans";
+    margin: 0;
+}
+
+/* Main Content Area */
+#main {
+
+}
+
+/* GOT Header Styling */
+#got-header {
+    height: 100px;
+    width: 100%;
+    overflow-y: hidden;
+    display: block;
+    text-align: center;
+    background-color: #3C3C3C;
+}
+
+/* Styling for Each GOT Tab */
+.got-tab {
+    width: 14.2857142857%; /* Equal width for each tab */
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    opacity: 0.6; /* Semi-transparent by default */
+    transition: opacity 0.1s ease-in 0s; /* Smooth transition for opacity */
+}
+
+/* Active Tab Styling */
+.got-tab.active {
+    opacity: 1; /* Fully opaque when active */
+}
+
+/* Image Styling within GOT Tab */
+.got-tab img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Text Styling within GOT Tab */
+.got-tab p {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+/* Responsive Styling for GOT Survival Div */
+@media screen and (min-width: 10px) {
+    .got-survival {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .got-survival {
+        width: 40%;
+    }
+}
+
+/* GOT Survival Div Styling */
+.got-survival {
+    font-family: "Open Sans";
+    margin: 10px 6px 16px 6px;
+    display: inline-block;
+}
+
+/* Character Name Styling */
+.got-person-name {
+    margin: 2px 6px;
+    font-size: 12px;
+}
+
+/* Progress Bar Styling */
+.got-progress-bar {
+    display: block;
+    position: relative;
+    background-color: rgba(0,0,0,0.5); /* Semi-transparent background */
+    height: 20px;
+    border-radius: 15px; /* Rounded corners */
+    margin-top: 8px;
+}
+
+/* Progress Bar Fill Styling */
+.got-progress-bar-fill {
+    display: block;
+    position: absolute;
+    height: 14px;
+    top: 3px;
+    left: 3px;
+    width: 50%; /* Default width */
+    border-radius: 8px; /* Rounded corners */
+    background-color: white;
+    transition: all 0.2s ease-in 0s; /* Smooth transition for width */
+}
+
+/* Progress Bar Value Styling */
+.got-progress-bar-value {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centered text */
+    font-size: 10px;
+    font-weight: 600;
+    color: #222;
+    margin: 0;
+}

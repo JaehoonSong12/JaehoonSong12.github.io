@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.area-plot {
+    fill: black;  /* Changed to a steel blue for better visualization */
+    stroke: none;
+    mix-blend-mode: multiply;
+    opacity: 0.75;  /* Slight transparency to allow overlap visibility */
+}
+
+.company-label {
+    text-anchor: middle;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.axis-label {
+    text-anchor: middle;
+    font-size: 14px;
+    font-weight: semibold;
+}
+
+.grid path, .grid line {
+    stroke: #80808038;  /* Light gray grid lines */
+    stroke-dasharray: 0;  /* No (0) Dashed grid lines */
+}
+
+.background {
+    fill: #f1f2f4;  /* Light background for contrast */
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+}
+
+g text {
+    font-family: "Inter", sans-serif;
+}
+
+main {
+    margin: 20px;
+}
+
+/* ***************************** */
+/* Color themes for each company */
+/* ***************************** */
+.trellis-plot.aapl .area-plot,
+.trellis-plot.aapl .company-label {
+    fill: blue;  /* AAPL label color */
+}
+
+.trellis-plot.googl .area-plot,
+.trellis-plot.googl .company-label {
+    fill: green;  /* GOOGL label color */
+}
+
+.trellis-plot.meta .area-plot,
+.trellis-plot.meta .company-label {
+    fill: purple;  /* META label color */
+}
+
+.trellis-plot.msft .area-plot,
+.trellis-plot.msft .company-label {
+    fill: orange;  /* MSFT label color */
+}

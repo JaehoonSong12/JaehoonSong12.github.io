@@ -1,0 +1,27 @@
+// Load the Spotify data CSV file
+d3.csv("top_10000_1950-now.csv").then(data => {
+    console.log(data); // Check if data is loaded and formatted correctly in the console
+
+    // Ensure numerical data is parsed correctly
+    data.forEach(d => {
+        d.Popularity = +d.Popularity;
+        d.Energy = +d.Energy;
+        d.Danceability = +d.Danceability;
+        d.Valence = +d.Valence;
+        d.Tempo = +d.Tempo;
+        d['Track Duration (ms)'] = +d['Track Duration (ms)'];
+        d['Album Release Date'] = new Date(d['Album Release Date']).getFullYear(); // Convert release date to year only
+    });
+
+    // Visualization 1: Top Tracks by Popularity and Genre
+    createPopularityGenresChart(data);
+
+    // Visualization 2: Energy vs. Popularity by Genre
+    createEnergyPopularityGenreChart(data);
+
+    // Visualization 3: Genre Evolution Over Time
+    createGenreEvolutionChart(data);
+
+    // Visualization 4: Tempo Trends Over Time
+    createTempoTrendsChart(data);
+});
