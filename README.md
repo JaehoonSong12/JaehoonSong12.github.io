@@ -4,7 +4,7 @@
 
 # CS4460 Vizualytics
 
-This project is a web-based information visualization tool designed to explore and analyze data through engaging and interactive visual representations. It is hosted using Flask and developed with D3.js, HTML, CSS, and JavaScript. The tool enables users to derive meaningful insights from datasets by visualizing trends, patterns, and relationships in an intuitive manner.
+This project is a web-based information visualization tool designed to explore and analyze data through engaging and interactive visual representations. It is hosted using Flask/Github and developed with D3.js, HTML, CSS, and JavaScript. The tool enables users to derive meaningful insights from datasets by visualizing trends, patterns, and relationships in an intuitive manner.
 
 
 
@@ -21,14 +21,13 @@ This project is forked from the repository [cs4460_vizualytics](https://github.g
 
 
 ## Features
-
-- **Web Hosting with Flask**: A lightweight Python framework serves as the host for the application, ensuring quick setup and smooth operation.
+- **Web Hosting by GitHub**: GitHub serves as a reliable platform for hosting static content, ensuring easy deployment and accessibility.
+- **Local Hosting by Python Flask**: Flask, a lightweight Python framework, enables efficient local hosting for dynamic application development and testing.
 - **Interactive Visualizations**: Built using D3.js, the tool offers dynamic and interactive data visualizations that allow for user-driven exploration.
 - **Responsive Design**: Designed with HTML and CSS to ensure visualizations are mobile-friendly and adapt seamlessly to different screen sizes.
 
 ## Technologies
 
-- **Python** (Flask for hosting)
 - **D3.js** (for visualizations)
 - **HTML, CSS, and JavaScript** (for front-end development)
 
