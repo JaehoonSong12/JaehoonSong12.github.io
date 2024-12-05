@@ -2,34 +2,12 @@
 <a id="readme-top"></a>
 
 
-## Table of Contents
-- [CS4460 Vizualytics](#cs4460-vizualytics)
-  - [Features](#features)
-  - [Technologies](#technologies)
-  - [Design References](#design-references)
-  - [Datasets References](#datasets-references)
-- [Instructions](#instructions)
-  - [Installation](#installation)
-- [Universal Python Environment Setup Script](#universal-python-environment-setup-script)
-  - [Usage](#usage)
-  - [Folder Structure](#folder-structure)
-  - [License](#license)
-- [Ideation and Design Phase Outline](#ideation-and-design-phase-outline)
-  - [1. Project Planning and Data Collection](#1-project-planning-and-data-collection)
-  - [2. Data Exploration](#2-data-exploration)
-  - [3. Story Arc Development](#3-story-arc-development)
-  - [4. Visualization Sketching](#4-visualization-sketching)
-  - [5. Decision-Making](#5-decision-making)
-  - [6. Final Documentation and Video Submission](#6-final-documentation-and-video-submission)
-
-
-
-
-<br /><br /><br />
-
-
 
 # CS4460 Vizualytics
+
+
+https://jaehoonsong12.github.io/
+
 
 This project is forked from the repository [cs4460_vizualytics](https://github.gatech.edu/jsong421/cs4460_vizualytics.git) by `jsong421`. Original work can be found [here](https://github.gatech.edu/jsong421/cs4460_vizualytics.git).
 
@@ -61,6 +39,36 @@ The visualizations in this project are based on the following datasets:
 - **Normalized Spotify Song Data**: [View on Kaggle](https://www.kaggle.com/code/varunsaikanuri/spotify-data-visualization/input)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p><br /><br /><br />
+
+
+
+
+
+## Table of Contents
+- [CS4460 Vizualytics](#cs4460-vizualytics)
+  - [Features](#features)
+  - [Technologies](#technologies)
+  - [Design References](#design-references)
+  - [Datasets References](#datasets-references)
+  - [Table of Contents](#table-of-contents)
+- [Instructions](#instructions)
+  - [Installation](#installation)
+- [Universal Python Environment Setup Script](#universal-python-environment-setup-script)
+  - [Usage](#usage)
+  - [Folder Structure](#folder-structure)
+  - [License](#license)
+- [Ideation and Design Phase Outline](#ideation-and-design-phase-outline)
+  - [1. Project Planning and Data Collection](#1-project-planning-and-data-collection)
+  - [2. Data Exploration](#2-data-exploration)
+  - [3. Story Arc Development](#3-story-arc-development)
+  - [4. Visualization Sketching](#4-visualization-sketching)
+  - [5. Decision-Making](#5-decision-making)
+  - [6. Final Documentation and Video Submission](#6-final-documentation-and-video-submission)
+
+
+
+
+<br /><br /><br />
 
 
 
