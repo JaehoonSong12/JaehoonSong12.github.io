@@ -53,7 +53,6 @@ The visualizations in this project are based on the following datasets:
   - [Table of Contents](#table-of-contents)
 - [Instructions](#instructions)
   - [Installation](#installation)
-- [Universal Python Environment Setup Script](#universal-python-environment-setup-script)
   - [Usage](#usage)
   - [Folder Structure](#folder-structure)
   - [License](#license)
@@ -85,12 +84,7 @@ The visualizations in this project are based on the following datasets:
    cd <your-repository-folder>
    ```
 
-2. **Set up the virtual environment**:
-
-
-# Universal Python Environment Setup Script
-
-This script sets up a virtual environment, installs required packages, and runs a Python application. It automatically detects the correct Python command (either `python3` or `python`) and adjusts for different OS environments (Windows, macOS, Linux).
+2. **Set up the virtual environment**: This script sets up a virtual environment, installs required packages, and runs a Python application. It automatically detects the correct Python command (either `python3` or `python`) and adjusts for different OS environments (Windows, macOS, Linux).
 
 ```bash
 # Check for Python command (python3 or python)
@@ -131,9 +125,6 @@ pip install -r requirements.txt
 # Run the application
 $PYTHON_CMD app.py
 ```
-
-
-
 
 
 
