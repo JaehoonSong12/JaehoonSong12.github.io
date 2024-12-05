@@ -1,0 +1,92 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+
+  body {
+	font-family: 'Open Sans', sans-serif;
+	color: yellow;
+	background-color: #fff;
+	font-size: 15px;
+	line-height: 1.6;
+  }
+
+
+  .navbar {
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .navbar-brand {
+	font-size: 18px;
+	font-weight: bold;
+  }
+  .navbar-nav .nav-link {
+	font-size: 14px;
+	padding: 10px 15px;
+  }
+  .navbar-nav .nav-link:hover {
+	color: #6c757d;
+	text-decoration: underline;
+  }
+
+
+  .section {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 20px;
+  }
+
+  #page1 {
+	background-color: rgb(255, 149, 0);
+  }
+  #page2 {
+	background-color: orange;
+  }
+  #page3 {
+	background-color:rgb(255, 174, 0);
+  }
+  #page4 {
+	background-color: yellow;
+  }
+  #page5 {
+	background-color: rgb(249, 220, 0);
+  }
+  #page6 {
+	background-color: yellow;
+	color: rgb(255, 225, 0);
+  }
+
+
+  h1, h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	color: #444;
+  }
+
+  h1 {
+	font-size: 40px;
+	margin-bottom: 20px;
+  }
+
+  h2 {
+	font-size: 30px;
+	margin-bottom: 15px;
+  }
+
+  p {
+	font-size: 16px;
+	color: #666;
+	max-width: 800px;
+	margin: 0 auto;
+  }
+
+
+  .fp-controlArrow {
+	opacity: 0.6;
+  }
+  .fp-controlArrow:hover {
+	opacity: 1;
+  }

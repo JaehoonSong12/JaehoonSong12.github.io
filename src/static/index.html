@@ -1,37 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Navigation</title>
-    <script src="https://d3js.org/d3.v6.min.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Project Website Template">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet">
+    <title>Project Website</title>
     <style>
-        button {
-            margin: 5px;
-            padding: 10px;
-            font-size: 16px;
-        }
+      .section {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      #page1 { background-color: #f8f9fa; }
+      #page2 { background-color: #e9ecef; }
+      #page3 { background-color: #dee2e6; }
+      #page4 { background-color: #ced4da; }
+      #page5 { background-color: #adb5bd; }
+      #page6 { background-color: #6c757d; color: white; }
     </style>
-</head>
-<body>
-    <h1>CS 4460 Lab 1</h1>
-    <button onclick="window.location.href='jaehoon/index.html'">Go to workspace for Jaehoon</button>
-    <button onclick="window.location.href='devika/index.html'">Go to workspace for Devika</button>
-    <button onclick="window.location.href='manya/index.html'">Go to workspace for Manya</button>
-    <button onclick="window.location.href='yashman/index.html'">Go to workspace for Yashman</button>
-
-    <br><br><br><br><br><br>
-
-    <h1>Previous Lab Source Codes</h1>
-    <button onclick="window.location.href='labs/activity_3_0/index.html'">Go to Lab 3 Activity 0</button>
-    <button onclick="window.location.href='labs/activity_3_1/index.html'">Go to Lab 3 Activity 1</button>
-    <button onclick="window.location.href='labs/activity_3_2/index.html'">Go to Lab 3 Activity 2</button>
-    <button onclick="window.location.href='labs/activity_3_3/index.html'">Go to Lab 3 Activity 3</button>
-    <button onclick="window.location.href='labs/activity_4_1/index.html'">Go to Lab 4 Activities</button>
-    <button onclick="window.location.href='labs/activity_4_0/index.html'">Go to Lab 4 Tutorials</button>
-    <button onclick="window.location.href='labs/activity_5_3/index.html'">Go to Lab 5 Activity 3</button>
-</body>
-<!-- Link to the new JavaScript file that handles page refresh -->
-<script src="./refreshpage.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">Introduction to Information Visualization Final Project</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#page1">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#page2">Visualization 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="#page3">Visualization 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="#page4">Visualization 3</a></li>
+          <li class="nav-item"><a class="nav-link" href="#page5">Visualization 4</a></li>
+          <li class="nav-item"><a class="nav-link" href="#page6">Visualization 5</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="fullpage">
+      <div class="section" id="page1">
+        <h1>Team Visualytics</h1>
+        <p>Members: Manya Jain, Yashman Singh, Devika Patel, Jaehoon Song</p>
+      </div>
+      <div class="section" id="page2">
+        <h2>Visualization 1</h2>
+      </div>
+      <div class="section" id="page3">
+        <h2>Visualization 2</h2>
+      </div>
+      <div class="section" id="page4">
+        <h2>Visualization 3</h2>
+      </div>
+      <div class="section" id="page5">
+        <h2>Visualization 4</h2>
+      </div>
+      <div class="section" id="page6">
+        <h2>Visualization 5</h2>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <script>
+      new fullpage('#fullpage', {
+        autoScrolling: true,
+        navigation: true,
+        anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+        navigationTooltips: ['Home', 'Visualization 1', 'Visualization 2', 'Visualization 3', 'Visualization 4', 'Visualization 5'],
+        showActiveTooltip: true,
+      });
+    </script>
+  </body>
 </html>
