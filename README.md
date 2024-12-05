@@ -52,7 +52,7 @@ The visualizations in this project are based on the following datasets:
   - [Datasets References](#datasets-references)
   - [Table of Contents](#table-of-contents)
 - [Instructions](#instructions)
-  - [Installation](#installation)
+  - [Initialization](#initialization)
   - [Usage](#usage)
   - [Folder Structure](#folder-structure)
   - [License](#license)
@@ -76,7 +76,7 @@ The visualizations in this project are based on the following datasets:
 
 # Instructions
 
-## Installation
+## Initialization
 
 1. **Clone the repository**:
    ```bash
@@ -132,7 +132,8 @@ $PYTHON_CMD app.py
 
 After setting up the environment, you can start the Flask server with:
 ```bash
-python app.py
+cd src
+python cli.py
 ```
 
 Once the server is running, open your browser and go to `http://localhost:5000` to view the application.
