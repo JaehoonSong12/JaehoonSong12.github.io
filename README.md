@@ -1,17 +1,24 @@
-<!-- Anchor Tag (Object) for "back to top" -->
 <a id="readme-top"></a>
 
 
 
 # CS4460 Vizualytics
 
+This project is a web-based information visualization tool designed to explore and analyze data through engaging and interactive visual representations. It is hosted using Flask and developed with D3.js, HTML, CSS, and JavaScript. The tool enables users to derive meaningful insights from datasets by visualizing trends, patterns, and relationships in an intuitive manner.
 
-https://jaehoonsong12.github.io/
 
+
+
+## Website Reference
+The project is deployed using **GitHub Pages**, ensuring high availability and accessibility. The interactive data story is publicly accessible via the URL, **[Project Website](https://jaehoonsong12.github.io/)**.
+
+## Codebase Reference
+The code for this project is hosted on GitHub in this repository. You can explore the source code, contribute, and access different branches as necessary:
+
+[GitHub Repository - Jaehoon Song](https://github.com/JaehoonSong12/JaehoonSong12.github.io)
 
 This project is forked from the repository [cs4460_vizualytics](https://github.gatech.edu/jsong421/cs4460_vizualytics.git) by `jsong421`. Original work can be found [here](https://github.gatech.edu/jsong421/cs4460_vizualytics.git).
 
-This project is a web-based information visualization tool designed to explore and analyze data through engaging and interactive visual representations. It is hosted using Flask and developed with D3.js, HTML, CSS, and JavaScript. The tool enables users to derive meaningful insights from datasets by visualizing trends, patterns, and relationships in an intuitive manner.
 
 ## Features
 
@@ -46,6 +53,8 @@ The visualizations in this project are based on the following datasets:
 
 ## Table of Contents
 - [CS4460 Vizualytics](#cs4460-vizualytics)
+  - [Website Reference](#website-reference)
+  - [Codebase Reference](#codebase-reference)
   - [Features](#features)
   - [Technologies](#technologies)
   - [Design References](#design-references)
@@ -63,15 +72,34 @@ The visualizations in this project are based on the following datasets:
   - [4. Visualization Sketching](#4-visualization-sketching)
   - [5. Decision-Making](#5-decision-making)
   - [6. Final Documentation and Video Submission](#6-final-documentation-and-video-submission)
+- [Interactive Data Story Implementation Guide](#interactive-data-story-implementation-guide)
+  - [General Overview:](#general-overview)
+  - [Key Milestones:](#key-milestones)
+    - [**Prototype v1 (Week 12)**:](#prototype-v1-week-12)
+    - [**Prototype v2 (Week 13)**:](#prototype-v2-week-13)
+    - [**Evaluation (Week 14)**:](#evaluation-week-14)
+    - [**Final Update \& Submission (Week 16)**:](#final-update--submission-week-16)
+  - [Submission Details:](#submission-details)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 <br /><br /><br />
 
-
-
-
+---
 
 
 # Instructions
@@ -166,6 +194,19 @@ This is free and unencumbered software released into the public domain - see the
 
 
 
+
+
+
+
+
+
+
+
+<br /><br /><br />
+
+---
+
+
 # Ideation and Design Phase Outline
 
 This outline is tailored to guide you through the "Ideation and Design" phase of your information visualization project. It provides a structured step-by-step approach for your project planning, data exploration, sketching, and decision-making processes.
@@ -244,3 +285,80 @@ This outline is tailored to guide you through the "Ideation and Design" phase of
 ---
 
 Each step should be documented in detail in your process book for submission.
+
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br /><br /><br />
+
+---
+
+
+# Interactive Data Story Implementation Guide
+
+## General Overview:
+- **Goal**: Create and deploy a web-based interactive data story using D3.js.
+- **Deployment**: Use GitHub Pages (preferred) or another hosting service to make the project publicly accessible.
+- **Evaluation**: Conduct a think-aloud user evaluation, update your implementation based on feedback, and document the process.
+- **Documentation**: Maintain a process book, and submit it as a PDF.
+- **Final Submission**: Include the complete code repository, a process book, and a 3-minute screencast demo.
+
+---
+
+## Key Milestones:
+
+### **Prototype v1 (Week 12)**:
+- **Deliverables**:
+  - Real data scraped and cleaned.
+  - One partially implemented D3 visualization and draft code for two others.
+  - Basic webpage design and structure (placeholders allowed).
+  - Clear storytelling elements and innovative view designs.
+  - Text descriptions and sketches for interactions (e.g., filtering, brushing).
+  - Updated process book.
+
+### **Prototype v2 (Week 13)**:
+- **Deliverables**:
+  - Full implementation of all visualizations and interactions.
+  - Complete and test-ready data story for user evaluation.
+
+### **Evaluation (Week 14)**:
+- Conduct a **think-aloud user evaluation** with a classmate.
+- Document results and apply changes based on feedback.
+- Record which feedback was acted on and justify omissions.
+
+### **Final Update & Submission (Week 16)**:
+- Finalize the web-based data story and deployment.
+- Document changes made based on the evaluation in the process book.
+- Submit the project, including:
+  1. **Code Repository**: Deployable with all necessary data included.
+  2. **Process Book**: Comprehensive documentation in PDF format.
+  3. **Walkthrough Video**: A 3-minute screencast demonstrating the data story.
+
+---
+
+## Submission Details:
+- **Deadline**: Submissions are accepted until Dec 9th, 9 AM, with a 10% late penalty. No submissions after the deadline.
+- **Hosting**: Ensure the public website is functional and link it in the process book.
+- **Video Format**: Use a standard format with clear sound quality; if too large, provide a YouTube link.
+
+---
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
