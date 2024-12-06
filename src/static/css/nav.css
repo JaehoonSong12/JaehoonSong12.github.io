@@ -1,0 +1,37 @@
+/* Navigation Dots */
+.nav-dots {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.nav-dots button {
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+    background: #ced4da;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.nav-dots button.active {
+    background: #007bff;
+}
+.navbar {
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.custom-tooltip {
+    position: absolute;
+    display: none;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1000;
+}
