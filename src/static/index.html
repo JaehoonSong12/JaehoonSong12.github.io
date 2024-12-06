@@ -18,7 +18,7 @@
         overflow: hidden; /* Disable default scrolling */
       }
       .section {
-        height: 100vh;
+        min-height: 100vh; /* Full-screen sections */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -86,25 +86,181 @@
       <p>CS-4460-B: Introduction to Information Visualization by Yalong Yang</p>
       <h2>Music Trends and Insights: Visualization of Genres, Artists, and Listener Behaviors</h2>
     </section>
-    <section class="section" id="page2">
-        <h2>Visualization 1: Genre Popularity Heatmap</h2>
-        <p>This heatmap shows how different genres have risen or fallen in popularity over the years...</p>
-        <div id="yashman-vis-container"></div>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    <section class="section d-flex flex-column justify-content-center align-items-center text-center bg-light" id="page2" style="min-height: 100vh;">
+      <div class="container h-100 d-flex flex-column justify-content-end mt-5">
+        <!-- Centered Heading -->
+        <div class="row justify-content-center mb-3"> <!-- Adjust mb-4 to mb-3 for smaller gap -->
+          <div class="col-12">
+            <h1 class="fs-3 fw-semibold py-3 px-4 rounded text-white" style="background: linear-gradient(to right, #007bff, #0056b3);">
+              Visualization 1: Genre Popularity Heatmap
+            </h1>
+          </div>
+        </div>
+        <!-- Footer Content -->
+        <div class="row w-100 mt-auto gap-4"> <!-- Optional: Add mt-3 for additional spacing -->
+          <!-- Left Content (p) -->
+          <div class="col-md-4 d-flex justify-content-center align-items-start">
+            <p class="bg-white border rounded shadow p-3 text-start w-100">
+              The heatmap visualizes genre popularity trends across years, specifically showing how the average popularity of various music genres has evolved from 1990 to 2020. The color gradient helps to easily distinguish between more and less popular genres in any given year, with darker shades indicating higher popularity.</br></br>
+              The interactivity (tooltips and legend) enhances the user experience, making the heatmap not only informative but also engaging. Users can hover over each cell to get more detailed information about specific genre-year combinations, and the color scale helps them understand the popularity trends visually.</br></br>
+              This implementation is useful for exploring patterns in music genre popularity over time, identifying which genres have seen the most significant rise or fall, and providing insights into cultural trends.
+            </p>
+          </div>
+          <!-- Right Content (Visualization div) -->
+          <div class="col-md-7 d-flex justify-content-center align-items-start">
+            <div id="yashman-vis-container" class="w-200 h-auto border rounded shadow bg-white" style="min-height: 300px;"></div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="section" id="page3">
-      <h2>Visualization 2: Danceability vs. Energy</h2>
-        <p>This scatterplot shows the relationship between danceability and energy of tracks, with color representing track popularity.</p>
-        <div id="vis2-container"></div>
+
+
+
+
+
+
+    <section class="section d-flex flex-column justify-content-center align-items-center text-center bg-light" id="page3" style="min-height: 100vh;">
+      <div class="container h-100 d-flex flex-column justify-content-end mt-5">
+        <!-- Centered Heading -->
+        <div class="row justify-content-center mb-3"> <!-- Adjust mb-4 to mb-3 for smaller gap -->
+          <div class="col-12">
+            <h1 class="fs-3 fw-semibold py-3 px-4 rounded text-white" style="background: linear-gradient(to right, #007bff, #0056b3);">
+              Visualization 2: Danceability vs. Energy
+            </h1>
+          </div>
+        </div>
+        <!-- Footer Content -->
+        <div class="row w-100 mt-auto gap-4"> <!-- Optional: Add mt-3 for additional spacing -->
+          <!-- Left Content (p) -->
+          <div class="col-md-4 d-flex justify-content-center align-items-start">
+            <p class="bg-white border rounded shadow p-3 text-start w-100">
+              This scatterplot shows the relationship between danceability and energy of tracks, with color representing track popularity.</p>
+            </p>
+          </div>
+          <!-- Right Content (Visualization div) -->
+          <div class="col-md-7 d-flex justify-content-center align-items-start">
+            <div id="vis2-container" class="w-200 h-auto border rounded shadow bg-white" style="min-height: 300px;"></div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="section" id="page4">
-      <h2>Visualization 3</h2>
+
+
+
+
+
+
+
+    <section class="section d-flex flex-column justify-content-center align-items-center text-center bg-light" id="page4" style="min-height: 100vh;">
+      <div class="container h-100 d-flex flex-column justify-content-end mt-5">
+        <!-- Centered Heading -->
+        <div class="row justify-content-center mb-3"> <!-- Adjust mb-4 to mb-3 for smaller gap -->
+          <div class="col-12">
+            <h1 class="fs-3 fw-semibold py-3 px-4 rounded text-white" style="background: linear-gradient(to right, #007bff, #0056b3);">
+              Visualization 3: 
+            </h1>
+          </div>
+        </div>
+        <!-- Footer Content -->
+        <div class="row w-100 mt-auto gap-4"> <!-- Optional: Add mt-3 for additional spacing -->
+          <!-- Left Content (p) -->
+          <div class="col-md-4 d-flex justify-content-center align-items-start">
+            <p class="bg-white border rounded shadow p-3 text-start w-100">
+              dsadsadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsg</p>
+            </p>
+          </div>
+          <!-- Right Content (Visualization div) -->
+          <div class="col-md-7 d-flex justify-content-center align-items-start">
+            <div id="" class="w-200 h-auto border rounded shadow bg-white" style="min-height: 300px;"></div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="section" id="page5">
-      <h2>Visualization 4</h2>
+
+
+
+
+
+    <section class="section d-flex flex-column justify-content-center align-items-center text-center bg-light" id="page5" style="min-height: 100vh;">
+      <div class="container h-100 d-flex flex-column justify-content-end mt-5">
+        <!-- Centered Heading -->
+        <div class="row justify-content-center mb-3"> <!-- Adjust mb-4 to mb-3 for smaller gap -->
+          <div class="col-12">
+            <h1 class="fs-3 fw-semibold py-3 px-4 rounded text-white" style="background: linear-gradient(to right, #007bff, #0056b3);">
+              Visualization 4: 
+            </h1>
+          </div>
+        </div>
+        <!-- Footer Content -->
+        <div class="row w-100 mt-auto gap-4"> <!-- Optional: Add mt-3 for additional spacing -->
+          <!-- Left Content (p) -->
+          <div class="col-md-4 d-flex justify-content-center align-items-start">
+            <p class="bg-white border rounded shadow p-3 text-start w-100">
+              dsadsadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsg</p>
+            </p>
+          </div>
+          <!-- Right Content (Visualization div) -->
+          <div class="col-md-7 d-flex justify-content-center align-items-start">
+            <div id="" class="w-200 h-auto border rounded shadow bg-white" style="min-height: 300px;"></div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="section" id="page6">
-      <h2>Visualization 5</h2>
+
+
+
+
+
+
+    <section class="section d-flex flex-column justify-content-center align-items-center text-center bg-light" id="page6" style="min-height: 100vh;">
+      <div class="container h-100 d-flex flex-column justify-content-end mt-5">
+        <!-- Centered Heading -->
+        <div class="row justify-content-center mb-3"> <!-- Adjust mb-4 to mb-3 for smaller gap -->
+          <div class="col-12">
+            <h1 class="fs-3 fw-semibold py-3 px-4 rounded text-white" style="background: linear-gradient(to right, #007bff, #0056b3);">
+              Visualization 5: 
+            </h1>
+          </div>
+        </div>
+        <!-- Footer Content -->
+        <div class="row w-100 mt-auto gap-4"> <!-- Optional: Add mt-3 for additional spacing -->
+          <!-- Left Content (p) -->
+          <div class="col-md-4 d-flex justify-content-center align-items-start">
+            <p class="bg-white border rounded shadow p-3 text-start w-100">
+              dsadsadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsg</p>
+            </p>
+          </div>
+          <!-- Right Content (Visualization div) -->
+          <div class="col-md-7 d-flex justify-content-center align-items-start">
+            <div id="" class="w-200 h-auto border rounded shadow bg-white" style="min-height: 300px;"></div>
+          </div>
+        </div>
+      </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
     <!-- Navigation Dots -->
     <div class="nav-dots">
       <button data-target="page1" class="active"></button>
