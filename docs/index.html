@@ -8,57 +8,9 @@
     <!-- CSS Libraries -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet">
-    <!-- Inline Styles -->
-    <style>
-      body {
-        font-family: 'Helvetica Neue', Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        scroll-behavior: smooth;
-        overflow: hidden; /* Disable default scrolling */
-      }
-      .section {
-        min-height: 100vh; /* Full-screen sections */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
-      /* Section Background Colors */
-      #page1 { background: #f8f9fa; }
-      #page2 { background: #e9ecef; }
-      #page3 { background: #dee2e6; }
-      #page4 { background: #ced4da; }
-      #page5 { background: #adb5bd; }
-      #page6 { background: #6c757d; color: white; }
-      /* Navigation Dots */
-      .nav-dots {
-        position: fixed;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
-      .nav-dots button {
-        width: 12px;
-        height: 12px;
-        border: none;
-        border-radius: 50%;
-        background: #ced4da;
-        cursor: pointer;
-        transition: background 0.3s;
-      }
-      .nav-dots button.active {
-        background: #007bff;
-      }
-      .navbar {
-        border-bottom: 3px solid rgba(0, 0, 0, 0.1);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
   </head>
   <body>
     <!-- Navigation -->
@@ -71,7 +23,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="#page1">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#intro">Introduction</a></li>
+            <li class="nav-item"><a class="nav-link" href="#story-slide">Storytelling</a></li>
             <li class="nav-item"><a class="nav-link" href="#page2">Visualization 1</a></li>
+            <li class="nav-item"><a class="nav-link" href="#storytelling-slide-2-3">Artist Stories</a></li>
             <li class="nav-item"><a class="nav-link" href="#page3">Visualization 2</a></li>
             <li class="nav-item"><a class="nav-link" href="#page4">Visualization 3</a></li>
             <li class="nav-item"><a class="nav-link" href="#page5">Visualization 4</a></li>
@@ -80,25 +35,75 @@
         </div>
       </div>
     </nav>
+
+
+
+
+
+
+
+
+
     <!-- FullPage Sections -->
-    <section class="section" id="page1">
-      <h1>Welcome to Team Visualytics</h1>
-      <p>CS-4460-B: Introduction to Information Visualization by Yalong Yang</p>
-      <h2>Music Trends and Insights: Visualization of Genres, Artists, and Listener Behaviors</h2>
+    <!------------------------------------------------------------------>
+    <!------------------------------page1------------------------------------>
+    <!------------------------------------------------------------------>
+    <section class="section vh-100 text-dark text-center d-flex align-items-center" id="page1" style="background: linear-gradient(to bottom, #FFFFFF, #87CEFA);">
+      <div class="container px-5">
+        <h1 class="display-4 fw-bold animate__animated animate__fadeInDown mb-4">Welcome to Team Visualytics</h1>
+        <p class="lead animate__animated animate__fadeInUp mb-4">CS-4460-B: Introduction to Information Visualization by Yalong Yang</p>
+        <h2 class="h4 animate__animated animate__fadeInUp mt-4 mb-4">Unveiling Music Trends: A Journey Through Time, Culture, and Listener Preferences</h2>
+        <p class="animate__animated animate__fadeInUp text-muted">
+          Music is a reflection of who we are, what we value, and how we connect. This project dives into the 
+          evolution of music trends, uncovering how genres, artists, and listening habits have shaped—and 
+          been shaped by—cultural identities across generations and regions.
+        </p>
+      </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-    
-
-
+    <!------------------------------------------------------------------>
+    <!------------------------------intro------------------------------------>
+    <!------------------------------------------------------------------>
+    <section class="section vh-100 text-dark text-center d-flex align-items-center" id="intro" style="background: linear-gradient(to bottom, #87CEFA, #1E90FF);">
+      <div class="container px-5">
+        <h2 class="display-5 fw-bold animate__animated animate__fadeInDown mb-4">About Our Project</h2>
+        <p class="lead animate__animated animate__fadeInUp mb-4">
+          This project explores various aspects of the music industry, focusing on how genres, artists, and listener behaviors have evolved over time...
+        </p>
+        <h2 class="h5 animate__animated animate__fadeInDown mt-4 mb-4">Our Vision</h2>
+        <p class="animate__animated animate__fadeInUp mb-4">
+          Music mirrors society, capturing shifts in cultural identity, values, and preferences. In this project, 
+          we explore the pulse of the music industry through data, uncovering:
+        </p>
+        <ul class="list-group list-group-flush text-start mx-auto w-50">
+          <li class="list-group-item bg-transparent text-light animate__animated animate__fadeInUp">The rise and fall of genres over decades</li>
+          <li class="list-group-item bg-transparent text-light animate__animated animate__fadeInUp">The stories behind artist popularity and influence</li>
+          <li class="list-group-item bg-transparent text-light animate__animated animate__fadeInUp">The intersection of listener demographics and music preferences</li>
+        </ul>
+      </div>
+    </section>
+    <!------------------------------------------------------------------>
+    <!-----------------------------story-slide------------------------------------->
+    <!------------------------------------------------------------------>
+    <section class="section vh-100 d-flex align-items-center text-center text-light" id="story-slide" style="background: linear-gradient(135deg, #1e3c72, #2a5298);">
+      <div class="container px-5">
+        <h2 class="display-5 fw-bold animate__animated animate__zoomIn mb-4 text-uppercase text-shadow">The Evolution of Listener Preferences</h2>
+        <p class="lead animate__animated animate__fadeInUp mb-3">
+          Music trends are more than numbers—they're a window into cultural identity. The rise of hip-hop 
+          highlights self-expression and social commentary. Meanwhile, pop's enduring popularity speaks 
+          to its broad appeal and adaptability.
+        </p>
+        <p class="animate__animated animate__fadeInUp">
+          Explore how streaming platforms have accelerated these shifts, bringing global genres to the 
+          forefront and reshaping how we connect with music.
+        </p>
+        <div class="mt-4">
+          <a href="#page2" class="btn btn-light btn-lg shadow-sm animate__animated animate__pulse animate__infinite">Explore More</a>
+        </div>
+      </div>
+    </section>
+    <!------------------------------------------------------------------>
+    <!------------------------------page2------------------------------------>
+    <!------------------------------------------------------------------>
     <section class="section d-flex flex-column justify-content-center align-items-center text-center bg-light" id="page2" style="min-height: 100vh;">
       <div class="container h-100 d-flex flex-column justify-content-end mt-5">
         <!-- Centered Heading -->
@@ -114,9 +119,10 @@
           <!-- Left Content (p) -->
           <div class="col-md-4 d-flex justify-content-center align-items-start">
             <p class="bg-white border rounded shadow p-3 text-start w-100">
-              The heatmap visualizes genre popularity trends across years, specifically showing how the average popularity of various music genres has evolved from 1990 to 2020. The color gradient helps to easily distinguish between more and less popular genres in any given year, with darker shades indicating higher popularity.</br></br>
-              The interactivity (tooltips and legend) enhances the user experience, making the heatmap not only informative but also engaging. Users can hover over each cell to get more detailed information about specific genre-year combinations, and the color scale helps them understand the popularity trends visually.</br></br>
-              This implementation is useful for exploring patterns in music genre popularity over time, identifying which genres have seen the most significant rise or fall, and providing insights into cultural trends.
+              Our journey begins by looking at how music genres have evolved over time. This heatmap paints a vivid picture of 
+              the rise and fall of different genres. While pop and rock dominated the early decades, the meteoric rise of hip-hop 
+              and electronic music highlights a shift in cultural preferences. This visualization provides the context for 
+              understanding how societal trends shape music consumption patterns.
             </p>
           </div>
           <!-- Right Content (Visualization div) -->
@@ -126,12 +132,36 @@
         </div>
       </div>
     </section>
-
-
-
-
-
-
+    <!------------------------------------------------------------------>
+    <!------------------------------storytelling-slide-2-3------------------------------------>
+    <!------------------------------------------------------------------>
+    <section class="section vh-100 d-flex align-items-center text-center text-light" id="storytelling-slide-2-3" 
+            style="background: linear-gradient(120deg, #4e54c8, #8f94fb);">
+      <div class="container px-5">
+        <h2 class="display-5 fw-bold animate__animated animate__fadeInDown mb-4 text-uppercase text-shadow">
+          The Rise of Streaming Giants and Artist Stardom
+        </h2>
+        <p class="lead animate__animated animate__fadeInUp mb-3">
+          As music trends evolve, one constant remains: the role of artists in shaping listener experiences. 
+          From energetic beats to danceable tracks, artists create the foundation for what defines our 
+          music preferences. But what drives an artist’s success? Is it consistency, a breakout hit, or 
+          their ability to connect emotionally with listeners?
+        </p>
+        <p class="animate__animated animate__fadeInUp">
+          This brings us to the next chapter in our journey: an exploration of artist popularity. How do 
+          certain artists rise to the top in a competitive streaming world? What tracks define their 
+          careers? Let’s find out.
+        </p>
+        <div class="mt-4">
+          <a href="#page3" class="btn btn-outline-light btn-lg shadow-lg animate__animated animate__heartBeat animate__infinite">
+            Discover Artist Stories
+          </a>
+        </div>
+      </div>
+    </section>
+    <!------------------------------------------------------------------>
+    <!-------------------------------page3----------------------------------->
+    <!------------------------------------------------------------------>
     <section class="section d-flex flex-column justify-content-center align-items-center text-center bg-light" id="page3" style="min-height: 100vh;">
       <div class="container h-100 d-flex flex-column justify-content-end mt-5">
         <!-- Centered Heading -->
@@ -147,7 +177,8 @@
           <!-- Left Content (p) -->
           <div class="col-md-4 d-flex justify-content-center align-items-start">
             <p class="bg-white border rounded shadow p-3 text-start w-100">
-              This scatterplot shows the relationship between danceability and energy of tracks, with color representing track popularity.</p>
+              Why do some tracks dominate playlists? This scatterplot reveals the interplay between energy and danceability—two key attributes that influence a track’s popularity. Genres like EDM and hip-hop often boast high-energy beats that keep listeners engaged.</br></br>
+              But there’s room for all tastes. Softer, acoustic tracks demonstrate that emotional resonance can be just as powerful in captivating audiences. This visualization highlights the diversity of listener preferences and the range of elements that make music successful.
             </p>
           </div>
           <!-- Right Content (Visualization div) -->
@@ -157,20 +188,16 @@
         </div>
       </div>
     </section>
-
-
-
-
-
-
-
+    <!------------------------------------------------------------------>
+    <!---------------------------------page4--------------------------------->
+    <!------------------------------------------------------------------>
     <section class="section d-flex flex-column justify-content-center align-items-center text-center bg-light" id="page4" style="min-height: 100vh;">
       <div class="container h-100 d-flex flex-column justify-content-end mt-5">
         <!-- Centered Heading -->
         <div class="row justify-content-center mb-3"> <!-- Adjust mb-4 to mb-3 for smaller gap -->
           <div class="col-12">
             <h1 class="fs-3 fw-semibold py-3 px-4 rounded text-white" style="background: linear-gradient(to right, #007bff, #0056b3);">
-              Visualization 3: 
+              Visualization 3: Artist Popularity Bubble Chart
             </h1>
           </div>
         </div>
@@ -179,21 +206,22 @@
           <!-- Left Content (p) -->
           <div class="col-md-4 d-flex justify-content-center align-items-start">
             <p class="bg-white border rounded shadow p-3 text-start w-100">
-              dsadsadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsg</p>
+              Streaming platforms have transformed how artists connect with listeners, bringing their work to global audiences. This bubble chart highlights the top artists of the year, showcasing the size of their impact through streams. </br></br>
+              Each bubble represents an artist, with its size reflecting their total streams. Hover over a bubble to discover their most popular track and learn how they captivated listeners. This visualization reveals not just trends but the power of music to unite people worldwide.
             </p>
           </div>
           <!-- Right Content (Visualization div) -->
           <div class="col-md-7 d-flex justify-content-center align-items-start">
-            <div id="" class="w-200 h-auto border rounded shadow bg-white" style="min-height: 300px;"></div>
+          <div class="chart-container" class="w-200 h-auto border rounded shadow bg-white" style="min-height: 300px;" style="flex: 2;">
+            <div id="filter-container" style="margin-bottom: 20px;"></div>
+            <div id="bubble-chart-container"></div>
           </div>
         </div>
       </div>
     </section>
-
-
-
-
-
+    <!------------------------------------------------------------------>
+    <!-----------------------------page5------------------------------------->
+    <!------------------------------------------------------------------>
     <section class="section d-flex flex-column justify-content-center align-items-center text-center bg-light" id="page5" style="min-height: 100vh;">
       <div class="container h-100 d-flex flex-column justify-content-end mt-5">
         <!-- Centered Heading -->
@@ -219,12 +247,9 @@
         </div>
       </div>
     </section>
-
-
-
-
-
-
+    <!------------------------------------------------------------------>
+    <!------------------------------page6------------------------------------>
+    <!------------------------------------------------------------------>
     <section class="section d-flex flex-column justify-content-center align-items-center text-center bg-light" id="page6" style="min-height: 100vh;">
       <div class="container h-100 d-flex flex-column justify-content-end mt-5">
         <!-- Centered Heading -->
@@ -250,92 +275,25 @@
         </div>
       </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
     <!-- Navigation Dots -->
     <div class="nav-dots">
-      <button data-target="page1" class="active"></button>
-      <button data-target="page2"></button>
-      <button data-target="page3"></button>
-      <button data-target="page4"></button>
-      <button data-target="page5"></button>
-      <button data-target="page6"></button>
-    </div>
+      <button data-target="page1" class="active" aria-label="Go to Home"></button>
+      <button data-target="intro" aria-label="Go to Intro"></button>
+      <button data-target="story-slide" aria-label="Go to Story1"></button>
+      <button data-target="page2" aria-label="Go to Vis1"></button>
+      <button data-target="storytelling-slide-2-3" aria-label="Go to Story2"></button>
+      <button data-target="page3" aria-label="Go to Vis2"></button>
+      <button data-target="page4" aria-label="Go to Vis3"></button>
+      <button data-target="page5" aria-label="Go to Vis4"></button>
+      <button data-target="page6" aria-label="Go to Vis5"></button>
+    </div>  
     <!-- JS Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      const sections = document.querySelectorAll(".section");
-      const navDots = document.querySelectorAll(".nav-dots button");
-      const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-      let currentSection = 0;
-      function scrollToSection(index) {
-        sections[index].scrollIntoView({ behavior: "smooth" });
-        updateActiveDot(index);
-        updateActiveLink(index);
-        currentSection = index;
-        // Update the URL hash
-        history.pushState(null, null, `#${sections[index].id}`);
-      }
-      function updateActiveDot(index) {
-        navDots.forEach((dot, i) => {
-          dot.classList.toggle("active", i === index);
-        });
-      }
-      function updateActiveLink(index) {
-        navLinks.forEach((link, i) => {
-          link.classList.toggle("active", i === index);
-        });
-      }
-      // Scroll listener to update active states based on visible section
-      document.addEventListener("scroll", () => {
-        let scrollPosition = window.scrollY;
-        sections.forEach((section, index) => {
-          if (
-            scrollPosition >= section.offsetTop - section.clientHeight / 2 &&
-            scrollPosition < section.offsetTop + section.clientHeight / 2
-          ) {
-            updateActiveDot(index);
-            updateActiveLink(index);
-            currentSection = index;
-          }
-        });
-      });
-      // Add click listeners to navigation dots
-      navDots.forEach((dot, index) => {
-        dot.addEventListener("click", () => scrollToSection(index));
-      });
-      // Add click listeners to navbar links
-      navLinks.forEach((link, index) => {
-        link.addEventListener("click", (event) => {
-          event.preventDefault(); // Prevent default anchor click behavior
-          scrollToSection(index);
-        });
-      });
-      // Handle wheel events for smooth scrolling
-      document.addEventListener("wheel", (event) => {
-        if (event.deltaY > 0 && currentSection < sections.length - 1) {
-          scrollToSection(currentSection + 1);
-        } else if (event.deltaY < 0 && currentSection > 0) {
-          scrollToSection(currentSection - 1);
-        }
-      });
-    </script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/vanilla_nav.js"></script>
+    <script src="js/visualization_yashman.js"></script>
+    <script src="js/visualization2.js"></script>
+    <script src="js/visualization3.js"></script>
+    <script src="js/refreshpage.js"></script>
   </body>
-  <script src="./refreshpage.js"></script>
-  <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script src="yashman/visualization_yashman.js"></script>
-  <script src="yashman/visualization2.js"></script>
 </html>
-<!-- Link to the new JavaScript file that handles page refresh -->
-<!-- 
-  <script src="./refreshpage.js"></script>
- -->
