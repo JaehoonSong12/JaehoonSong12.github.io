@@ -8,6 +8,7 @@
     <!-- CSS Libraries -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <!-- Inline Styles -->
     <style>
       body {
@@ -27,7 +28,9 @@
       }
       /* Section Background Colors */
       #page1 { background: #f8f9fa; }
+      #intro { background: #fff3cd; }
       #page2 { background: #e9ecef; }
+      #story-slide { background: #e8f8f5; }
       #page3 { background: #dee2e6; }
       #page4 { background: #ced4da; }
       #page5 { background: #adb5bd; }
@@ -71,8 +74,11 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="#page1">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#intro">Introduction</a></li>
             <li class="nav-item"><a class="nav-link" href="#page2">Visualization 1</a></li>
+            <li class="nav-item"><a class="nav-link" href="#story-slide">Storytelling</a></li>
             <li class="nav-item"><a class="nav-link" href="#page3">Visualization 2</a></li>
+            <li class="nav-item"><a class="nav-link" href="#storytelling-slide-2-3">Artist Stories</a></li>
             <li class="nav-item"><a class="nav-link" href="#page4">Visualization 3</a></li>
             <li class="nav-item"><a class="nav-link" href="#page5">Visualization 4</a></li>
             <li class="nav-item"><a class="nav-link" href="#page6">Visualization 5</a></li>
@@ -82,22 +88,118 @@
     </nav>
     <!-- FullPage Sections -->
     <section class="section" id="page1">
-      <h1>Welcome to Team Visualytics</h1>
-      <p>CS-4460-B: Introduction to Information Visualization by Yalong Yang</p>
-      <h2>Music Trends and Insights: Visualization of Genres, Artists, and Listener Behaviors</h2>
+    <h1>Welcome to Team Visualytics</h1>
+    <p>CS-4460-B: Introduction to Information Visualization by Yalong Yang</p>
+    <h2>Unveiling Music Trends: A Journey Through Time, Culture, and Listener Preferences</h2>
+    <p>
+      Music is a reflection of who we are, what we value, and how we connect. This project dives into the 
+      evolution of music trends, uncovering how genres, artists, and listening habits have shaped—and 
+      been shaped by—cultural identities across generations and regions.
+    </p>
+    </section>
+    <section class="section" id="intro">
+      <h2>About Our Project</h2>
+      <p>This project explores various aspects of the music industry, focusing on how genres, artists, and listener behaviors have evolved over time...</p>
+      <h2>About Our Project</h2>
+      <p>
+        Music mirrors society, capturing shifts in cultural identity, values, and preferences. In this project, 
+        we explore the pulse of the music industry through data, uncovering:
+      </p>
+      <ul>
+        <li>The rise and fall of genres over decades</li>
+        <li>The stories behind artist popularity and influence</li>
+        <li>The intersection of listener demographics and music preferences</li>
+      </ul>
+      <p>
+        Through these narratives, we aim to reveal not just trends, but the deeper cultural dynamics that 
+        connect us to music.
+      </p>
     </section>
     <section class="section" id="page2">
-        <h2>Visualization 1: Genre Popularity Heatmap</h2>
-        <p>This heatmap shows how different genres have risen or fallen in popularity over the years...</p>
-        <div id="yashman-vis-container"></div>
+      <div class="container d-flex align-items-center justify-content-center" style="height: 100%; flex-wrap: wrap;">
+        <div class="text-container" style="flex: 1; padding: 10px; max-width: 50%;">
+          <h2>Visualization 1: Genre Popularity Heatmap</h2>
+          <p>
+            Our journey begins by looking at how music genres have evolved over time. This heatmap paints a vivid picture of 
+            the rise and fall of different genres. While pop and rock dominated the early decades, the meteoric rise of hip-hop 
+            and electronic music highlights a shift in cultural preferences. This visualization provides the context for 
+            understanding how societal trends shape music consumption patterns.
+          </p>
+        </div>
+        <div class="chart-container" style="flex: 1; max-width: 50%; padding: 20px;">
+          <div id="yashman-vis-container" style="height: 300px; width: 100%;"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="story-slide">
+      <h2>The Evolution of Listener Preferences</h2>
+      <p>
+        Music trends are more than numbers—they're a window into cultural identity. The rise of hip-hop 
+        highlights self-expression and social commentary. Meanwhile, pop's enduring popularity speaks 
+        to its broad appeal and adaptability.
+      </p>
+      <p>
+        Explore how streaming platforms have accelerated these shifts, bringing global genres to the 
+        forefront and reshaping how we connect with music. 
+      </p>
     </section>
     <section class="section" id="page3">
-      <h2>Visualization 2: Danceability vs. Energy</h2>
-        <p>This scatterplot shows the relationship between danceability and energy of tracks, with color representing track popularity.</p>
-        <div id="vis2-container"></div>
+      <div class="container d-flex align-items-center justify-content-center" style="height: 100%; flex-wrap: wrap;">
+        <div class="text-container" style="flex: 1; padding: 10px; max-width: 50%;">
+          <h2>Visualization 2: Danceability vs. Energy</h2>
+          <p>
+            Why do some tracks dominate playlists? This scatterplot reveals the interplay between energy and 
+            danceability—two key attributes that influence a track’s popularity. Genres like EDM and hip-hop 
+            often boast high-energy beats that keep listeners engaged.
+          </p>
+          <p>
+            But there’s room for all tastes. Softer, acoustic tracks demonstrate that emotional resonance can 
+            be just as powerful in captivating audiences. This visualization highlights the diversity of listener 
+            preferences and the range of elements that make music successful.
+          </p>
+        </div>
+        <div class="chart-container" style="flex: 1; max-width: 50%; padding: 20px;">
+          <div id="vis2-container" style="height: 300px; width: 100%;"></div>
+        </div>
+      </div>
     </section>
-    <section class="section" id="page4">
-      <h2>Visualization 3</h2>
+    <section class="section" id="storytelling-slide-2-3">
+      <h2>The Rise of Streaming Giants and Artist Stardom</h2>
+      <p>
+        As music trends evolve, one constant remains: the role of artists in shaping listener experiences. 
+        From energetic beats to danceable tracks, artists create the foundation for what defines our 
+        music preferences. But what drives an artist’s success? Is it consistency, a breakout hit, or 
+        their ability to connect emotionally with listeners?
+      </p>
+      <p>
+        This brings us to the next chapter in our journey: an exploration of artist popularity. How do 
+        certain artists rise to the top in a competitive streaming world? What tracks define their 
+        careers? Let’s find out.
+      </p>
+    </section>    
+    <section class="section d-flex align-items-center" id="page4">
+      <div class="container" style="display: flex; align-items: center; justify-content: center;">
+        <!-- Description Section -->
+        <div class="description-container" style="flex: 1; max-width: 40%; padding-right: 20px;">
+          <h2>Visualization 3: Artist Popularity Bubble Chart</h2>
+          <p>
+            Streaming platforms have transformed how artists connect with listeners, bringing their work to 
+            global audiences. This bubble chart highlights the top artists of the year, showcasing the 
+            size of their impact through streams.
+          </p>
+          <p>
+            Each bubble represents an artist, with its size reflecting their total streams. Hover over a 
+            bubble to discover their most popular track and learn how they captivated listeners. This 
+            visualization reveals not just trends but the power of music to unite people worldwide.
+          </p>
+        </div>
+    
+        <!-- Visualization Container -->
+        <div class="chart-container" style="flex: 2;">
+          <div id="filter-container" style="margin-bottom: 20px;"></div>
+          <div id="bubble-chart-container"></div>
+        </div>
+      </div>
     </section>
     <section class="section" id="page5">
       <h2>Visualization 4</h2>
@@ -107,13 +209,16 @@
     </section>
     <!-- Navigation Dots -->
     <div class="nav-dots">
-      <button data-target="page1" class="active"></button>
-      <button data-target="page2"></button>
-      <button data-target="page3"></button>
-      <button data-target="page4"></button>
-      <button data-target="page5"></button>
-      <button data-target="page6"></button>
-    </div>
+      <button data-target="page1" class="active" aria-label="Go to Home section"></button>
+      <button data-target="intro" aria-label="Go to Introduction section"></button>
+      <button data-target="page2" aria-label="Go to Visualization 1"></button>
+      <button data-target="story-slide" aria-label="Go to Storytelling"></button>
+      <button data-target="page3" aria-label="Go to Visualization 2"></button>
+      <button data-target="storytelling-slide-2-3" aria-label="Go to Artist Stories"></button>
+      <button data-target="page4" aria-label="Go to Visualization 3"></button>
+      <button data-target="page5" aria-label="Go to Visualization 4"></button>
+      <button data-target="page6" aria-label="Go to Visualization 5"></button>
+  </div>  
     <!-- JS Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
@@ -126,7 +231,6 @@
         updateActiveDot(index);
         updateActiveLink(index);
         currentSection = index;
-        // Update the URL hash
         history.pushState(null, null, `#${sections[index].id}`);
       }
       function updateActiveDot(index) {
@@ -139,7 +243,6 @@
           link.classList.toggle("active", i === index);
         });
       }
-      // Scroll listener to update active states based on visible section
       document.addEventListener("scroll", () => {
         let scrollPosition = window.scrollY;
         sections.forEach((section, index) => {
@@ -153,18 +256,15 @@
           }
         });
       });
-      // Add click listeners to navigation dots
       navDots.forEach((dot, index) => {
         dot.addEventListener("click", () => scrollToSection(index));
       });
-      // Add click listeners to navbar links
       navLinks.forEach((link, index) => {
         link.addEventListener("click", (event) => {
-          event.preventDefault(); // Prevent default anchor click behavior
+          event.preventDefault();
           scrollToSection(index);
         });
       });
-      // Handle wheel events for smooth scrolling
       document.addEventListener("wheel", (event) => {
         if (event.deltaY > 0 && currentSection < sections.length - 1) {
           scrollToSection(currentSection + 1);
@@ -173,13 +273,9 @@
         }
       });
     </script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="yashman/visualization_yashman.js"></script>
+    <script src="yashman/visualization2.js"></script>
+    <script src="yashman/visualization3.js"></script>
   </body>
-  <script src="./refreshpage.js"></script>
-  <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script src="yashman/visualization_yashman.js"></script>
-  <script src="yashman/visualization2.js"></script>
 </html>
-<!-- Link to the new JavaScript file that handles page refresh -->
-<!-- 
-  <script src="./refreshpage.js"></script>
- -->
