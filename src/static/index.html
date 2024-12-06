@@ -8,7 +8,7 @@
     <!-- CSS Libraries -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <!-- <link href="styles.css" rel="stylesheet"> -->
     <!-- Inline Styles -->
     <style>
       body {
@@ -19,7 +19,7 @@
         overflow: hidden; /* Disable default scrolling */
       }
       .section {
-        height: 100vh;
+        min-height: 100vh; /* Full-screen sections */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -115,51 +115,71 @@
         connect us to music.
       </p>
     </section>
-    <section class="section" id="page2">
-      <div class="container d-flex align-items-center justify-content-center" style="height: 100%; flex-wrap: wrap;">
-        <div class="text-container" style="flex: 1; padding: 10px; max-width: 50%;">
-          <h2>Visualization 1: Genre Popularity Heatmap</h2>
-          <p>
-            Our journey begins by looking at how music genres have evolved over time. This heatmap paints a vivid picture of 
-            the rise and fall of different genres. While pop and rock dominated the early decades, the meteoric rise of hip-hop 
-            and electronic music highlights a shift in cultural preferences. This visualization provides the context for 
-            understanding how societal trends shape music consumption patterns.
-          </p>
+    
+    <section class="section d-flex flex-column justify-content-center align-items-center text-center bg-light" id="page2" style="min-height: 100vh;">
+      <div class="container h-100 d-flex flex-column justify-content-end mt-5">
+        <!-- Centered Heading -->
+        <div class="row justify-content-center mb-3"> <!-- Adjust mb-4 to mb-3 for smaller gap -->
+          <div class="col-12">
+            <h1 class="fs-3 fw-semibold py-3 px-4 rounded text-white" style="background: linear-gradient(to right, #007bff, #0056b3);">
+              Visualization 1: Genre Popularity Heatmap
+            </h1>
+          </div>
         </div>
-        <div class="chart-container" style="flex: 1; max-width: 50%; padding: 20px;">
-          <div id="yashman-vis-container" style="height: 300px; width: 100%;"></div>
+        <!-- Footer Content -->
+        <div class="row w-100 mt-auto gap-4"> <!-- Optional: Add mt-3 for additional spacing -->
+          <!-- Left Content (p) -->
+          <div class="col-md-4 d-flex justify-content-center align-items-start">
+            <p class="bg-white border rounded shadow p-3 text-start w-100">
+              Our journey begins by looking at how music genres have evolved over time. This heatmap paints a vivid picture of 
+              the rise and fall of different genres. While pop and rock dominated the early decades, the meteoric rise of hip-hop 
+              and electronic music highlights a shift in cultural preferences. This visualization provides the context for 
+              understanding how societal trends shape music consumption patterns.
+            </p>
+          </div>
+          <!-- Right Content (Visualization div) -->
+          <div class="col-md-7 d-flex justify-content-center align-items-start">
+            <div id="yashman-vis-container" class="w-200 h-auto border rounded shadow bg-white" style="min-height: 300px;"></div>
+          </div>
         </div>
       </div>
-    </section>
-    <section class="section" id="story-slide">
-      <h2>The Evolution of Listener Preferences</h2>
-      <p>
-        Music trends are more than numbers—they're a window into cultural identity. The rise of hip-hop 
-        highlights self-expression and social commentary. Meanwhile, pop's enduring popularity speaks 
-        to its broad appeal and adaptability.
-      </p>
-      <p>
-        Explore how streaming platforms have accelerated these shifts, bringing global genres to the 
-        forefront and reshaping how we connect with music. 
-      </p>
-    </section>
-    <section class="section" id="page3">
-      <div class="container d-flex align-items-center justify-content-center" style="height: 100%; flex-wrap: wrap;">
-        <div class="text-container" style="flex: 1; padding: 10px; max-width: 50%;">
-          <h2>Visualization 2: Danceability vs. Energy</h2>
-          <p>
-            Why do some tracks dominate playlists? This scatterplot reveals the interplay between energy and 
-            danceability—two key attributes that influence a track’s popularity. Genres like EDM and hip-hop 
-            often boast high-energy beats that keep listeners engaged.
-          </p>
-          <p>
-            But there’s room for all tastes. Softer, acoustic tracks demonstrate that emotional resonance can 
-            be just as powerful in captivating audiences. This visualization highlights the diversity of listener 
-            preferences and the range of elements that make music successful.
-          </p>
+
+      <section class="section" id="story-slide">
+        <h2>The Evolution of Listener Preferences</h2>
+        <p>
+          Music trends are more than numbers—they're a window into cultural identity. The rise of hip-hop 
+          highlights self-expression and social commentary. Meanwhile, pop's enduring popularity speaks 
+          to its broad appeal and adaptability.
+        </p>
+        <p>
+          Explore how streaming platforms have accelerated these shifts, bringing global genres to the 
+          forefront and reshaping how we connect with music. 
+        </p>
+      </section>
+
+    <section class="section d-flex flex-column justify-content-center align-items-center text-center bg-light" id="page3" style="min-height: 100vh;">
+      <div class="container h-100 d-flex flex-column justify-content-end mt-5">
+        <!-- Centered Heading -->
+        <div class="row justify-content-center mb-3"> <!-- Adjust mb-4 to mb-3 for smaller gap -->
+          <div class="col-12">
+            <h1 class="fs-3 fw-semibold py-3 px-4 rounded text-white" style="background: linear-gradient(to right, #007bff, #0056b3);">
+              Visualization 2: Danceability vs. Energy
+            </h1>
+          </div>
         </div>
-        <div class="chart-container" style="flex: 1; max-width: 50%; padding: 20px;">
-          <div id="vis2-container" style="height: 300px; width: 100%;"></div>
+        <!-- Footer Content -->
+        <div class="row w-100 mt-auto gap-4"> <!-- Optional: Add mt-3 for additional spacing -->
+          <!-- Left Content (p) -->
+          <div class="col-md-4 d-flex justify-content-center align-items-start">
+            <p class="bg-white border rounded shadow p-3 text-start w-100">
+              Why do some tracks dominate playlists? This scatterplot reveals the interplay between energy and danceability—two key attributes that influence a track’s popularity. Genres like EDM and hip-hop often boast high-energy beats that keep listeners engaged.</br></br>
+              But there’s room for all tastes. Softer, acoustic tracks demonstrate that emotional resonance can be just as powerful in captivating audiences. This visualization highlights the diversity of listener preferences and the range of elements that make music successful.
+            </p>
+          </div>
+          <!-- Right Content (Visualization div) -->
+          <div class="col-md-7 d-flex justify-content-center align-items-start">
+            <div id="vis2-container" class="w-200 h-auto border rounded shadow bg-white" style="min-height: 300px;"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -176,37 +196,106 @@
         certain artists rise to the top in a competitive streaming world? What tracks define their 
         careers? Let’s find out.
       </p>
-    </section>    
-    <section class="section d-flex align-items-center" id="page4">
-      <div class="container" style="display: flex; align-items: center; justify-content: center;">
-        <!-- Description Section -->
-        <div class="description-container" style="flex: 1; max-width: 40%; padding-right: 20px;">
-          <h2>Visualization 3: Artist Popularity Bubble Chart</h2>
-          <p>
-            Streaming platforms have transformed how artists connect with listeners, bringing their work to 
-            global audiences. This bubble chart highlights the top artists of the year, showcasing the 
-            size of their impact through streams.
-          </p>
-          <p>
-            Each bubble represents an artist, with its size reflecting their total streams. Hover over a 
-            bubble to discover their most popular track and learn how they captivated listeners. This 
-            visualization reveals not just trends but the power of music to unite people worldwide.
-          </p>
+    </section>
+    <section class="section d-flex flex-column justify-content-center align-items-center text-center bg-light" id="page4" style="min-height: 100vh;">
+      <div class="container h-100 d-flex flex-column justify-content-end mt-5">
+        <!-- Centered Heading -->
+        <div class="row justify-content-center mb-3"> <!-- Adjust mb-4 to mb-3 for smaller gap -->
+          <div class="col-12">
+            <h1 class="fs-3 fw-semibold py-3 px-4 rounded text-white" style="background: linear-gradient(to right, #007bff, #0056b3);">
+              Visualization 3: Artist Popularity Bubble Chart
+            </h1>
+          </div>
         </div>
-    
-        <!-- Visualization Container -->
-        <div class="chart-container" style="flex: 2;">
-          <div id="filter-container" style="margin-bottom: 20px;"></div>
-          <div id="bubble-chart-container"></div>
+        <!-- Footer Content -->
+        <div class="row w-100 mt-auto gap-4"> <!-- Optional: Add mt-3 for additional spacing -->
+          <!-- Left Content (p) -->
+          <div class="col-md-4 d-flex justify-content-center align-items-start">
+            <p class="bg-white border rounded shadow p-3 text-start w-100">
+              Streaming platforms have transformed how artists connect with listeners, bringing their work to global audiences. This bubble chart highlights the top artists of the year, showcasing the size of their impact through streams. </br></br>
+              Each bubble represents an artist, with its size reflecting their total streams. Hover over a bubble to discover their most popular track and learn how they captivated listeners. This visualization reveals not just trends but the power of music to unite people worldwide.
+            </p>
+          </div>
+          <!-- Right Content (Visualization div) -->
+          <div class="col-md-7 d-flex justify-content-center align-items-start">
+            <div id="filter-container" class="w-200 h-auto border rounded shadow bg-white" style="min-height: 300px;"></div>
+            <div id="bubble-chart-container" class="w-200 h-auto border rounded shadow bg-white" style="min-height: 300px;"></div>
+          </div>
         </div>
       </div>
     </section>
-    <section class="section" id="page5">
-      <h2>Visualization 4</h2>
+
+
+
+
+
+    <section class="section d-flex flex-column justify-content-center align-items-center text-center bg-light" id="page5" style="min-height: 100vh;">
+      <div class="container h-100 d-flex flex-column justify-content-end mt-5">
+        <!-- Centered Heading -->
+        <div class="row justify-content-center mb-3"> <!-- Adjust mb-4 to mb-3 for smaller gap -->
+          <div class="col-12">
+            <h1 class="fs-3 fw-semibold py-3 px-4 rounded text-white" style="background: linear-gradient(to right, #007bff, #0056b3);">
+              Visualization 4: 
+            </h1>
+          </div>
+        </div>
+        <!-- Footer Content -->
+        <div class="row w-100 mt-auto gap-4"> <!-- Optional: Add mt-3 for additional spacing -->
+          <!-- Left Content (p) -->
+          <div class="col-md-4 d-flex justify-content-center align-items-start">
+            <p class="bg-white border rounded shadow p-3 text-start w-100">
+              dsadsadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsg</p>
+            </p>
+          </div>
+          <!-- Right Content (Visualization div) -->
+          <div class="col-md-7 d-flex justify-content-center align-items-start">
+            <div id="" class="w-200 h-auto border rounded shadow bg-white" style="min-height: 300px;"></div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="section" id="page6">
-      <h2>Visualization 5</h2>
+
+
+
+
+
+
+    <section class="section d-flex flex-column justify-content-center align-items-center text-center bg-light" id="page6" style="min-height: 100vh;">
+      <div class="container h-100 d-flex flex-column justify-content-end mt-5">
+        <!-- Centered Heading -->
+        <div class="row justify-content-center mb-3"> <!-- Adjust mb-4 to mb-3 for smaller gap -->
+          <div class="col-12">
+            <h1 class="fs-3 fw-semibold py-3 px-4 rounded text-white" style="background: linear-gradient(to right, #007bff, #0056b3);">
+              Visualization 5: 
+            </h1>
+          </div>
+        </div>
+        <!-- Footer Content -->
+        <div class="row w-100 mt-auto gap-4"> <!-- Optional: Add mt-3 for additional spacing -->
+          <!-- Left Content (p) -->
+          <div class="col-md-4 d-flex justify-content-center align-items-start">
+            <p class="bg-white border rounded shadow p-3 text-start w-100">
+              dsadsadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsgadsads afgds afdsa fsdgfds gfsd gfdsg fdsg</p>
+            </p>
+          </div>
+          <!-- Right Content (Visualization div) -->
+          <div class="col-md-7 d-flex justify-content-center align-items-start">
+            <div id="" class="w-200 h-auto border rounded shadow bg-white" style="min-height: 300px;"></div>
+          </div>
+        </div>
+      </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
     <!-- Navigation Dots -->
     <div class="nav-dots">
       <button data-target="page1" class="active" aria-label="Go to Home section"></button>
