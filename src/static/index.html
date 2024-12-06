@@ -87,10 +87,14 @@
       <h2>Music Trends and Insights: Visualization of Genres, Artists, and Listener Behaviors</h2>
     </section>
     <section class="section" id="page2">
-      <h2>Visualization 1</h2>
+        <h2>Visualization 1: Genre Popularity Heatmap</h2>
+        <p>This heatmap shows how different genres have risen or fallen in popularity over the years...</p>
+        <div id="yashman-vis-container"></div>
     </section>
     <section class="section" id="page3">
-      <h2>Visualization 2</h2>
+      <h2>Visualization 2: Danceability vs. Energy</h2>
+        <p>This scatterplot shows the relationship between danceability and energy of tracks, with color representing track popularity.</p>
+        <div id="vis2-container"></div>
     </section>
     <section class="section" id="page4">
       <h2>Visualization 3</h2>
@@ -171,6 +175,9 @@
     </script>
   </body>
   <script src="./refreshpage.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="yashman/visualization_yashman.js"></script>
+  <script src="yashman/visualization2.js"></script>
 </html>
 <!-- Link to the new JavaScript file that handles page refresh -->
 <!-- 
