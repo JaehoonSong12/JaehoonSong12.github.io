@@ -1,24 +1,3 @@
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    overflow: hidden; /* Disable default scrolling */
 }
-.section {
-    min-height: 100vh; /* Full-screen sections */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-/* Section Background Colors */
-#page1 { background: #f8f9fa; }
-#intro { background: #fff3cd; }
-#page2 { background: #e9ecef; }
-#story-slide { background: #e8f8f5; }
-#page3 { background: #dee2e6; }
-#page4 { background: #ced4da; }
-#page5 { background: #adb5bd; }
-#page6 { background: #6c757d; color: white; }
