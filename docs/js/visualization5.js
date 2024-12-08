@@ -47,9 +47,9 @@ document.head.appendChild(style);
 
 
 // Dimensions and margins
-const margin = { top: 40, right: 150, bottom: 80, left: 60 };
-const width = 900 - margin.left - margin.right;
-const height = 500 - margin.top - margin.bottom;
+const margin5 = { top: 40, right: 150, bottom: 80, left: 60 };
+const width5 = 900 - margin5.left - margin5.right;
+const height5 = 500 - margin5.top - margin5.bottom;
 
 // Create SVG canvas
 const svg = d3

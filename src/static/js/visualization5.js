@@ -47,18 +47,18 @@ document.head.appendChild(style);
 
 
 // Dimensions and margins
-const margin = { top: 40, right: 150, bottom: 80, left: 60 };
-const width = 900 - margin.left - margin.right;
-const height = 500 - margin.top - margin.bottom;
+const margin5 = { top: 40, right: 150, bottom: 80, left: 60 };
+const width5 = 900 - margin5.left - margin5.right;
+const height5 = 500 - margin5.top - margin5.bottom;
 
 // Create SVG canvas
 const svg = d3
   .select("#vis5-container")
   .append("svg")
-  .attr("width", width + margin.left + margin.right)
-  .attr("height", height + margin.top + margin.bottom)
+  .attr("width", width5 + margin5.left + margin5.right)
+  .attr("height", height5 + margin5.top + margin5.bottom)
   .append("g")
-  .attr("transform", `translate(${margin.left},${margin.top})`);
+  .attr("transform", `translate(${margin5.left},${margin5.top})`);
 
 // Tooltip
 const tooltip = d3
