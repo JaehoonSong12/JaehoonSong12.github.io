@@ -1,0 +1,76 @@
+/* Base styling for the body */
+body {
+    font-family: "Open Sans";
+}
+
+/* Main container styling */
+#main {
+    margin: 10px 20px;
+}
+
+/* Styling for axis labels */
+text.label {
+    text-anchor: middle;
+    font-size: 11px;
+    fill: #555;
+    font-family: sans-serif;
+}
+
+/* Styling for axis text (year and popularity score) */
+.axis text {
+    fill: #555;
+}
+
+/* Styling for the lines and paths of the axis */
+.axis line,
+.axis path {
+    stroke: #555;
+}
+
+/* Styling for the graph title */
+text.title {
+    text-anchor: middle;
+    font-size: 14px;
+    fill: #333;
+}
+
+/* Styling for circle elements */
+circle {
+    fill: steelblue;
+    opacity: 0.7;
+}
+
+/* High-danceability songs */
+.high-danceability {
+    fill: orange;
+    opacity: 0.45;
+}
+
+/* Low-danceability songs */
+.low-danceability {
+    fill: steelblue;
+    opacity: 0.45;
+}
+
+/* ************************ CSS rules for hover effects ************************ */
+/* Styling for text */
+text.track-label {
+    text-anchor: middle;
+    font-size: 12px;
+    fill: #333;
+}
+
+/* Make the text initially hidden */
+text.track-label {
+    visibility: hidden;
+}
+
+/* When hovering over the group (g), make the text visible */
+g:hover text.track-label {
+    visibility: visible;
+}
+
+/* When hovering over the group (g), make the circle fully opaque */
+g:hover circle {
+    opacity: 1;
+}

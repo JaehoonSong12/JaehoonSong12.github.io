@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 3 - Paragraphs</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Main container holding both the list of songs and the table -->
+    <div id="main">
+        <!-- Heading for the list of songs -->
+        <h3>Spotify most streamed songs released in 2020</h3>
+        <!-- Div where D3 will inject paragraphs for each artist's data -->
+        <div id="spotify-artist"></div>
+
+        <!-- Table for displaying rank, artist, song, and daily streams -->
+        <div id="table-section">
+            <h3>Top 10 Artists Table</h3>
+            <table id="artist-table">
+                <thead>
+                    <!-- Table headers for the rank, artist, song, and daily columns -->
+                    <tr>
+                        <td>Rank</td>
+                        <td>Artist</td>
+                        <td>Song</td>
+                        <td>Daily</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- D3 will dynamically append rows to this table -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+<!-- D3 library and JavaScript file to handle data -->
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="./paragraphs.js"></script>
+</html>
