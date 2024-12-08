@@ -73,10 +73,10 @@ The visualizations in this project are based on the following datasets:
 - [Interactive Data Story Implementation Guide](#interactive-data-story-implementation-guide)
   - [General Overview:](#general-overview)
   - [Key Milestones:](#key-milestones)
-    - [**Prototype v1 (Week 12)**:](#prototype-v1-week-12)
-    - [**Prototype v2 (Week 13)**:](#prototype-v2-week-13)
-    - [**Evaluation (Week 14)**:](#evaluation-week-14)
-    - [**Final Update \& Submission (Week 16)**:](#final-update--submission-week-16)
+    - [Prototype v1 (Week 12):](#prototype-v1-week-12)
+    - [Prototype v2 (Week 13):](#prototype-v2-week-13)
+    - [Evaluation (Week 14):](#evaluation-week-14)
+    - [Final Update \& Submission (Week 16):](#final-update--submission-week-16)
   - [Submission Details:](#submission-details)
 
 
@@ -322,7 +322,7 @@ Each step should be documented in detail in your process book for submission.
 
 ## Key Milestones:
 
-### **Prototype v1 (Week 12)**:
+### Prototype v1 (Week 12):
 - **Deliverables**:
   - Real data scraped and cleaned.
   - One partially implemented D3 visualization and draft code for two others.
@@ -331,17 +331,17 @@ Each step should be documented in detail in your process book for submission.
   - Text descriptions and sketches for interactions (e.g., filtering, brushing).
   - Updated process book.
 
-### **Prototype v2 (Week 13)**:
+### Prototype v2 (Week 13):
 - **Deliverables**:
   - Full implementation of all visualizations and interactions.
   - Complete and test-ready data story for user evaluation.
 
-### **Evaluation (Week 14)**:
+### Evaluation (Week 14):
 - Conduct a **think-aloud user evaluation** with a classmate.
 - Document results and apply changes based on feedback.
 - Record which feedback was acted on and justify omissions.
 
-### **Final Update & Submission (Week 16)**:
+### Final Update & Submission (Week 16):
 - Finalize the web-based data story and deployment.
 - Document changes made based on the evaluation in the process book.
 - Submit the project, including:
