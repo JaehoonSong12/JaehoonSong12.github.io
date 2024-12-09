@@ -7,6 +7,10 @@
 This project is a web-based information visualization project for **Vizualytics** team in **CS4460: Intro Info Visualization** by Yalong Yang (yalong.yang@gatech.edu), an instructor in *Georgia Institute of Technology*. It is designed to explore and analyze data through engaging and interactive visual representations and is hosted using Flask/Github and developed with D3.js, HTML, CSS, and JavaScript. This project enables users to derive meaningful insights from datasets by visualizing trends, patterns, and relationships in an intuitive manner.
 
 
+### Video References
+- **Ideation and Design**: A 2-minute video showcasing the design process is available [here](https://youtu.be/MX_Zej_0rlY).
+- **Interactive Data Story Implementation**: A 3-minute video detailing the implementation is available [here](https://youtu.be/X0DYHHH1kdE).
+
 
 ## Website Reference
 The project is deployed using **GitHub Pages**, ensuring high availability and accessibility. The interactive data story is publicly accessible via the URL, **[Project Website](https://jaehoonsong12.github.io/)**.
@@ -29,6 +33,8 @@ This project is forked from the repository [cs4460_vizualytics](https://github.g
 
 - **D3.js** (for visualizations)
 - **HTML, CSS, and JavaScript** (for front-end development)
+- **Flask** (for local hosting and backend integration)
+
 
 ## Design References
 
@@ -51,6 +57,7 @@ The visualizations in this project are based on the following datasets:
 
 ## Table of Contents
 - [CS4460 Vizualytics](#cs4460-vizualytics)
+    - [Video References](#video-references)
   - [Website Reference](#website-reference)
   - [Codebase Reference](#codebase-reference)
   - [Features](#features)
@@ -61,16 +68,15 @@ The visualizations in this project are based on the following datasets:
 - [Instructions](#instructions)
   - [Initialization](#initialization)
   - [Usage](#usage)
-  - [Folder Structure](#folder-structure)
   - [License](#license)
-- [Ideation and Design Phase Outline](#ideation-and-design-phase-outline)
+- [Ideation and Design](#ideation-and-design)
   - [1. Project Planning and Data Collection](#1-project-planning-and-data-collection)
   - [2. Data Exploration](#2-data-exploration)
   - [3. Story Arc Development](#3-story-arc-development)
   - [4. Visualization Sketching](#4-visualization-sketching)
   - [5. Decision-Making](#5-decision-making)
   - [6. Final Documentation and Video Submission](#6-final-documentation-and-video-submission)
-- [Interactive Data Story Implementation Guide](#interactive-data-story-implementation-guide)
+- [Interactive Data Story Implementation](#interactive-data-story-implementation)
   - [General Overview:](#general-overview)
   - [Key Milestones:](#key-milestones)
     - [Prototype v1 (Week 12):](#prototype-v1-week-12)
@@ -164,18 +170,6 @@ python cli.py
 
 Once the server is running, open your browser and go to `http://localhost:5000` to view the application.
 
-## Folder Structure
-
-The project includes a "static" folder where each team member has their own subdirectory to organize their individual contributions. The structure is as follows:
-
-- `static/devika`: Folder for Devika's work
-- `static/jaehoon`: Folder for Jaehoon's work
-- `static/labs`: Shared space for experimental or group work
-- `static/manya`: Folder for Manya's work
-- `static/yashman`: Folder for Yashman's work
-
-Each team member can place their own HTML, CSS, JS, or data files within their respective folders, allowing for organized and modular development.
-
 ## License
 
 This is free and unencumbered software released into the public domain - see the LICENSE file for details.
@@ -205,7 +199,7 @@ This is free and unencumbered software released into the public domain - see the
 ---
 
 
-# Ideation and Design Phase Outline
+# Ideation and Design
 
 This outline is tailored to guide you through the "Ideation and Design" phase of your information visualization project. It provides a structured step-by-step approach for your project planning, data exploration, sketching, and decision-making processes.
 
@@ -309,7 +303,7 @@ Each step should be documented in detail in your process book for submission.
 ---
 
 
-# Interactive Data Story Implementation Guide
+# Interactive Data Story Implementation
 
 ## General Overview:
 - **Goal**: Create and deploy a web-based interactive data story using D3.js.
