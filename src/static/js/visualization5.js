@@ -92,15 +92,15 @@ d3.csv("data/spotify_user_research_cleaned_file.csv").then((data) => {
   });
 
   // Set scales
-  const xScale = d3
+  const xScale5 = d3
     .scaleBand()
     .domain(genres)
-    .range([0, width])
+    .range([0, width5])
     .padding(0.2);
 
-  const yScale = d3.scaleLinear().domain([0, d3.max(genreData, (d) => d.total)]).range([height, 0]);
+  const yScale5 = d3.scaleLinear().domain([0, d3.max(genreData, (d) => d.total)]).range([height5, 0]);
 
-  const colorScale = d3
+  const colorScale5 = d3
     .scaleOrdinal()
     .domain(ageGroups)
     .range(d3.schemeSet2);
@@ -109,20 +109,20 @@ d3.csv("data/spotify_user_research_cleaned_file.csv").then((data) => {
   svg
     .append("g")
     .selectAll("line")
-    .data(yScale.ticks(5))
+    .data(yScale5.ticks(5))
     .join("line")
     .attr("x1", 0)
-    .attr("x2", width)
-    .attr("y1", (d) => yScale(d))
-    .attr("y2", (d) => yScale(d))
+    .attr("x2", width5)
+    .attr("y1", (d) => yScale5(d))
+    .attr("y2", (d) => yScale5(d))
     .attr("stroke", "#e0e0e0")
     .attr("stroke-dasharray", "2,2");
 
   // Draw axes
   const xAxis = svg
     .append("g")
-    .attr("transform", `translate(0,${height})`)
-    .call(d3.axisBottom(xScale).tickSizeOuter(0).tickSizeInner(0));
+    .attr("transform", `translate(0,${height5})`)
+    .call(d3.axisBottom(xScale5).tickSizeOuter(0).tickSizeInner(0));
 
   xAxis
     .selectAll("path")
@@ -135,14 +135,14 @@ d3.csv("data/spotify_user_research_cleaned_file.csv").then((data) => {
     .style("text-anchor", "end")
     .style("font-size", "12px");
 
-  svg.append("g").call(d3.axisLeft(yScale).ticks(5));
+  svg.append("g").call(d3.axisLeft(yScale5).ticks(5));
 
   // Draw stacked bars
   const bars = svg
     .selectAll(".bar-group")
     .data(genreData)
     .join("g")
-    .attr("transform", (d) => `translate(${xScale(d.genre)},0)`);
+    .attr("transform", (d) => `translate(${xScale5(d.genre)},0)`);
 
   bars
     .selectAll("rect")
@@ -158,10 +158,10 @@ d3.csv("data/spotify_user_research_cleaned_file.csv").then((data) => {
     .join("rect")
     .attr("class", (d) => `bar age-${d.age.replace(/~/g, "-")}`)
     .attr("x", 0)
-    .attr("y", (d) => yScale(d.previous + d.count)) // Adjust position for stacking
-    .attr("width", xScale.bandwidth() - 5)
-    .attr("height", (d) => height - yScale(d.count)) // Adjust height based on count
-    .attr("fill", (d) => colorScale(d.age))
+    .attr("y", (d) => yScale5(d.previous + d.count)) // Adjust position for stacking
+    .attr("width", xScale5.bandwidth() - 5)
+    .attr("height", (d) => height5 - yScale5(d.count)) // Adjust height based on count
+    .attr("fill", (d) => colorScale5(d.age))
     .style("stroke", "white")
     .style("stroke-width", 1.5)
     .on("mouseover", (event, d) => {
@@ -190,7 +190,7 @@ d3.csv("data/spotify_user_research_cleaned_file.csv").then((data) => {
     .enter()
     .append("g")
     .attr("class", "legend")
-    .attr("transform", (_, i) => `translate(${width + 20},${i * 20})`);
+    .attr("transform", (_, i) => `translate(${width5 + 20},${i * 20})`);
 
   legend
     .append("rect")
@@ -198,7 +198,7 @@ d3.csv("data/spotify_user_research_cleaned_file.csv").then((data) => {
     .attr("y", 0)
     .attr("width", 12)
     .attr("height", 12)
-    .attr("fill", (d) => colorScale(d));
+    .attr("fill", (d) => colorScale5(d));
 
   legend
     .append("text")
@@ -210,8 +210,8 @@ d3.csv("data/spotify_user_research_cleaned_file.csv").then((data) => {
     // Add x-axis label
 svg
   .append("text")
-  .attr("x", width / 2) // Center horizontally
-  .attr("y", height + margin.bottom - 20) // Position below x-axis
+  .attr("x", width5 / 2) // Center horizontally
+  .attr("y", height5 + margin5.bottom - 20) // Position below x-axis
   .attr("text-anchor", "middle") // Align text to the center
   .style("font-size", "14px")
   .style("font-weight", "bold")
@@ -221,8 +221,8 @@ svg
 svg
   .append("text")
   .attr("transform", "rotate(-90)") // Rotate text for y-axis
-  .attr("x", -height / 2) // Center vertically
-  .attr("y", -margin.left + 20) // Position to the left of y-axis
+  .attr("x", -height5 / 2) // Center vertically
+  .attr("y", -margin5.left + 20) // Position to the left of y-axis
   .attr("text-anchor", "middle") // Align text to the center
   .style("font-size", "14px")
   .style("font-weight", "bold")
